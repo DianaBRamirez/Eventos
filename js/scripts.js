@@ -29,10 +29,10 @@ $('#eMouseup').on("mouseup", function () {
 $('#btnOM').on("click", function () {
     $('#scrollUpBtn, #scrollDownBtn').toggle();
 });
-$('#scrollUpBtn').click(function () {
+$('#scrollUpBtn').on("click",function () {
     $('html, body').animate({ scrollTop: 0 }, 'slow');
 });
-$('#scrollDownBtn').click(function () {
+$('#scrollDownBtn').on("click",function () {
     $('html, body').animate({ scrollTop: $(document).height() }, 'slow');
 });
 
